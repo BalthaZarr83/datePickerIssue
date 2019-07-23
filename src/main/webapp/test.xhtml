@@ -6,13 +6,17 @@
       xmlns:h="http://java.sun.com/jsf/html">
 
     <h:head>
-        <title>PrimeFaces Test</title>
+        <title>Primefaces Datepicker</title>
+        <h:outputScript name="js/datepicker.js"/>
     </h:head>
+
     <h:body>
-
-        <h1>#{testView.testString}</h1>
-
-        <h1>#{testViewCdi.testString}</h1>
+        <h:outputText value="Nr. 1: Year Selection should be limited to 2018-2019 (minDate=03/2018; maxDate=03/2019) and months outside min-max should not be selectable"/>
+        <p:separator />
+        <h:outputText value="Nr. 2: DateTemplate function never gets called (works without view='month'"/>
+        <p:separator />
+        <p:datePicker value="#{datePicker.chosenDate}" view="month" pattern="MM/yyyy"
+                      mindate="#{datePicker.minDate}" maxdate="#{datePicker.maxDate}" dateTemplate="dateTemplateFunc"/>
 
     </h:body>
 </html>

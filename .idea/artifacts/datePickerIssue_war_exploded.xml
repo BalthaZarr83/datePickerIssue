@@ -1,0 +1,38 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="datePickerIssue:war exploded">
+    <output-path>$PROJECT_DIR$/target/primefaces-test-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>datePickerIssue</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="datePickerIssue" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:7.0" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-atinject_1.0_spec:1.0" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jcdi_2.0_spec:1.0.1" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-interceptor_1.2_spec:1.0" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-annotation_1.3_spec:1.0" />
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-impl:2.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.xbean:xbean-finder-shaded:4.12" />
+          <element id="library" level="project" name="Maven: org.apache.xbean:xbean-asm7-shaded:4.12" />
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-spi:2.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-jsf:2.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-web:2.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-el22:2.0.10" />
+          <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.3.9" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/primefaces-test-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="datePickerIssue/web/Web" />
+    </root>
+  </artifact>
+</component>
